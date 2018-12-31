@@ -1,0 +1,14 @@
+Tests: python-oauthlib
+Depends:
+ python-all,
+ python-mock,
+ python-nose,
+ python-oauthlib,
+ python-unittest2
+
+Tests: python3-oauthlib
+Depends:
+ python3-all,
+ python3-mock,
+ python3-nose,
+ python3-oauthlib

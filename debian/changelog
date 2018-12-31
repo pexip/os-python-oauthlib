@@ -1,0 +1,198 @@
+python-oauthlib (2.1.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Daniele Tricoli ]
+  * New upstream release.
+  * Add debian/gbp.conf.
+  * Make sure autopkgtests test the installed version of oauthlib.
+  * debian/control
+    - Update to use my debian.org mail address.
+    - Bump Standards-Version to 4.3.0 (no changes needed).
+    - Update Description for both python{,3}-oauthlib.
+  * debian/copyright
+    - Update to use my debian.org mail address.
+
+ -- Daniele Tricoli <eriol@debian.org>  Mon, 31 Dec 2018 19:52:12 +0100
+
+python-oauthlib (2.0.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump debhelper compat level to 11.
+  * debian/control
+    - Bump Standards-Version to 4.1.3 (no changes needed).
+  * debian/copyright
+    - Use secure URI in format field.
+    - Update copyright years.
+  * debian/watch
+    - Use secure URI.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Sun, 04 Feb 2018 16:52:36 +0100
+
+python-oauthlib (2.0.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Upload to unstable.
+  * Enable autopkgtest tests.
+  * debian/control
+    - Bump Standards-Version to 4.1.0 (no changes needed).
+  * debian/copyright
+    - Update copyright years.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Tue, 26 Sep 2017 01:24:18 +0200
+
+python-oauthlib (2.0.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/control
+    - Bump X-Python-Version >= 2.7 and X-Python3-Version >= 3.4.
+    - Drop version for python-all.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Tue, 28 Mar 2017 00:32:45 +0200
+
+python-oauthlib (2.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Sat, 03 Dec 2016 01:26:17 +0100
+
+python-oauthlib (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Mon, 21 Nov 2016 01:17:35 +0100
+
+python-oauthlib (1.1.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Daniele Tricoli ]
+  * New upstream release.
+  * debian/control
+    - Bump Standards-Version to 3.9.8 (no changes needed).
+  * debian/copyright
+    - Update copyright years and upstream stanza.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Fri, 10 Jun 2016 20:30:17 +0200
+
+python-oauthlib (1.0.3-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #795273).
+  * debian/rules
+    - Use PYBUILD_SYSTEM=custom inside override_dh_auto_test to not run
+      doctests since some docstrings can't be tested anymore.
+    - Use PYBUILD_NAME instead of PYBUILD_DESTDIR_python2 and
+      PYBUILD_DESTDIR_python3.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Mon, 17 Aug 2015 04:36:16 +0200
+
+python-oauthlib (1.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control
+    - Switch Build-Depends and Depends from python{,3}-crypto to
+      python{,3}-cryptography.
+    - Bump python{,3}-jwt version to >= 1.0.0 in Build-Depends and Depends.
+  * debian/watch
+    - Use pypi.debian.net redirector.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Mon, 20 Jul 2015 22:26:45 +0200
+
+python-oauthlib (0.7.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/control
+    - Add python{,3}-blinker to Build-Depends and Depends fields.
+
+ -- Daniele Tricoli <eriol@mornie.org>  Sat, 22 Nov 2014 23:29:31 +0100
+
+python-oauthlib (0.6.3-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #757630).
+  * debian/control
+    - Add python{,3}-jwt to Build-Depends and Depends fields.
+    - Bump Standards-Version to 3.9.6 (no changes needed)
+
+ -- Daniele Tricoli <eriol@mornie.org>  Tue, 07 Oct 2014 11:10:36 +0200
+
+python-oauthlib (0.6.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control
+    - Bumped Standards-Version to 3.9.5 (no changes needed)
+
+ -- Daniele Tricoli <eriol@mornie.org>  Mon, 27 Jan 2014 00:45:09 +0100
+
+python-oauthlib (0.5.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Switched to pybuild
+
+ -- Daniele Tricoli <eriol@mornie.org>  Tue, 03 Sep 2013 05:14:53 +0200
+
+python-oauthlib (0.5.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Upload to unstable
+  * debian/compat
+    - Bumped debhelper compatibility level to 9
+  * debian/control
+    - Bumped debhelper B-D to (>= 9)
+    - Removed python-django from Enhances since the decorator is not
+      provided any more
+  * debian/watch
+    - Switched download URL to https
+
+ -- Daniele Tricoli <eriol@mornie.org>  Wed, 10 Jul 2013 21:03:27 +0200
+
+python-oauthlib (0.4.0-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Daniele Tricoli <eriol@mornie.org>  Wed, 03 Apr 2013 02:10:05 +0200
+
+python-oauthlib (0.3.8-1) experimental; urgency=low
+
+  * New upstream release
+  * debian/control
+    - Added python-django to Enhances since python-oauthlib provide a
+      OAuth 2 provider decorator for Django
+
+ -- Daniele Tricoli <eriol@mornie.org>  Wed, 06 Mar 2013 13:06:29 +0100
+
+python-oauthlib (0.3.4-1) experimental; urgency=low
+
+  * New upstream release
+  * Builded Python 3 package
+  * debian/control
+    - Added python-mock to Build-Depends
+    - Bumped Standards-Version to 3.9.4 (no changes needed)
+    - Updated Homepage
+    - Fixed lintian vcs-field-not-canonical
+    - Set X-Python-Version >= 2.6 to fix FTBFS with Python 2.5
+      on Squeeze backport. Thanks to Jordi Gutiérrez Hermoso for
+      the report. (Closes: #693157)
+    - Added X-Python3-Version: >= 3.2
+    - Added python3-all, python3-crypto, python3-mock,
+      python3-nose, python3-setuptools to Build-Depends
+    - Added python3-oauthlib
+  * debian/copyright
+    - Updated copyright years
+  * debian/patches/01_ship-missing-tests.patch
+    - Removed since upstream now ships tests in sdist
+  * debian/rules
+    - Refactored to build, test, install also Python3 package
+    - Added export PYTHONWARNINGS=d
+
+ -- Daniele Tricoli <eriol@mornie.org>  Mon, 14 Jan 2013 23:53:40 +0100
+
+python-oauthlib (0.1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #671487)
+
+ -- Daniele Tricoli <eriol@mornie.org>  Fri, 04 May 2012 20:55:18 +0200
