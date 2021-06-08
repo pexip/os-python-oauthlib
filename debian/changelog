@@ -1,3 +1,9 @@
+python-oauthlib (2.1.0-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- Huw Jones <huw@pexip.com>  Tue, 08 Jun 2021 15:43:49 +0000
+
 python-oauthlib (2.1.0-1) unstable; urgency=medium
 
   [ Ondřej Nový ]

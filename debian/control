@@ -1,6 +1,7 @@
 Source: python-oauthlib
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Uploaders: Daniele Tricoli <eriol@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+XSBC-Pexip-Original-Uploaders: Daniele Tricoli <eriol@debian.org>
 Section: python
 Priority: optional
 Build-Depends:
@@ -25,6 +26,7 @@ Standards-Version: 4.3.0
 Homepage: https://github.com/idan/oauthlib
 Vcs-Git: https://salsa.debian.org/python-team/modules/python-oauthlib.git
 Vcs-Browser: https://salsa.debian.org/python-team/modules/python-oauthlib
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: python-oauthlib
 Architecture: all
